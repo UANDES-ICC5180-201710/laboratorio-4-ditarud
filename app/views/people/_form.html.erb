@@ -24,6 +24,12 @@
   <div class="field">
     <%= f.label :email %>
     <%= f.text_field :email %>
+    <%= text_field :person, :email_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :es_profesor? %>
+    <%= f.select :is_professor,options_for_select([["Si" , true ], ["No" , false]]) %>
   </div>
 
   <div class="actions">
